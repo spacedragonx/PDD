@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Plant Disease Detection</title>
+    <link rel="icon" href="../static/leaf.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div id="logo">
+                <img src="../static/logo12.png" alt="Logo" id="bar-logo">
+                <a href="/" class="nav-logo">Plant Disease Detector</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="features">Features</a></li>
+                <li><a href="plants">Plants</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <h1>About This Project</h1>
+        
+        <div class="feature-item">
+            <h2>Project Overview</h2>
+            <p>
+                This application allows users to detect plant leaf diseases using a trained deep learning model. It
+                provides instant remedies by fetching data from a Firebase Realtime Database, helping farmers,
+                gardeners, and researchers mitigate crop loss efficiently.
+            </p>
+        </div>
+
+        <div class="feature-item">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>Python, FastAPI (Backend)</li>
+                <li>Firebase Realtime Database (Cloud Storage)</li>
+                <li>FastAI with ResNet-34 (Deep Learning)</li>
+                <li>FPDF (PDF Generation)</li>
+                <li>HTML/CSS/JavaScript (Frontend)</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h2>Supported Crops</h2>
+            <ul>
+                <li>Tomato</li>
+                <li>Potato</li>
+                <li>Apple</li>
+                <li>Grapes</li>
+                <li>(More can be added in the future)</li>
+            </ul>
+        </div>
+
+        <div class="feature-item">
+            <h2>How It Works</h2>
+            <ol>
+                <li>User uploads an image of a plant leaf.</li>
+                <li>The image is processed and sent to the FastAPI backend.</li>
+                <li>The backend uses a pre-trained model to classify the disease.</li>
+                <li>Remedies are fetched from Firebase and displayed to the user.</li>
+                <li>Users can download a PDF report of the analysis.</li>
+            </ol>
+        </div>
+
+        <div class="feature-item">
+            <h2>Motivation</h2>
+            <p>
+                This project aims to assist farmers and agricultural specialists by providing a reliable and
+                accessible platform for identifying plant diseases and suggesting appropriate remedies.
+                With food security being a major concern globally, early detection and prevention of plant
+                diseases can save crops and improve yield quality.
+            </p>
+            <p>
+                The system combines the power of deep learning (ResNet-34) with cloud technologies like Firebase
+                and modern asynchronous web frameworks to deliver fast and accurate results.
+                It is designed with usability and accessibility in mind, allowing users to interact with a clean
+                web interface from desktop or mobile.
+            </p>
+        </div>
+
+        <div class="feature-item">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to bridge the gap between machine learning research and real-world agricultural
+                needs. By leveraging AI and cloud computing, we aim to empower communities
+                with tools that are simple, free, and effective in combating plant health issues.
+            </p>
+        </div>
+
+        
+
+        <div class="feature-item">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Add support for more crops and diseases</li>
+                <li>Camera integration for live detection</li>
+                <li>Multilingual remedy support</li>
+                <li>Admin dashboard to manage remedies</li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background:#C0C0C0;
+            color: #2d3748;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #013220, #026440);
+            color: #ffffff;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .navbar:hover {
+            background: linear-gradient(90deg, #026440, #038c5a);
+            transform: translateY(-5px);
+        }
+
+        .nav-container {
+            display: flex;
+            gap: 600px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-logo {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 32px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            color: #64CEAA;
+            transform: scale(1.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Muli-Regular";
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #64CEAA;
+            color: #013220;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+
+        .container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            justify-items: center;
+            margin-top: 100px;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #2f855a;
+            margin-bottom: 1.5rem;
+            font-size: 30px;
+        }
+        .container h2 {
+            text-align: center;
+            color: #2980b9;
+            margin-bottom: 1.0rem;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        .feature-item {
+            margin-bottom: 30px;
+            align-items: center;
+            
+
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: rgb(235, 235, 235);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        h2 {
+            color: #2b6cb0;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+        }
+
+        #bar-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        #logo {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    </style>
+</body>
+
+</html>

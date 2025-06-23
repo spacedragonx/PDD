@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features - Plant Disease Detection</title>
+    <link rel="icon" href="../static/leaf.png" type="image/x-icon">
+
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div id="logo">
+                <img src="../static/logo12.png" alt="Logo" id="bar-logo">
+                <a href="/" class="nav-logo">Plant Disease Detector</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="features">Features</a></li>
+                <li><a href="plants">Plants</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Features</h2>
+        <section>
+            <div class="feature-item">
+                <h2> Disease Detection with Deep Learning</h2>
+                <p>Our platform harnesses the power of a ResNet-34 deep learning model, a convolutional neural network
+                    (CNN)
+                    optimized for image classification. Trained on an extensive dataset of thousands of high-resolution
+                    plant images, it accurately identifies a wide spectrum of plant diseases by analyzing leaf
+                    characteristics such as discoloration, spots, and texture anomalies. Using transfer learning, the
+                    model
+                    has been fine-tuned to excel in plant-specific diagnostics, ensuring robust performance across
+                    diverse
+                    plant species and environmental conditions.</p>
+                <ul>
+                    <li><strong>High Accuracy:</strong> Achieves over 90% accuracy on validated datasets, distinguishing
+                        subtle disease symptoms with precision.</li>
+                    <li><strong>Multi-Species Support:</strong> Detects diseases across a broad range of plants,
+                        including
+                        crops (e.g., wheat, rice), ornamentals, and fruit trees.</li>
+                    <li><strong>Continuous Learning:</strong> The model is regularly updated with new data to adapt to
+                        emerging diseases and improve detection capabilities.</li>
+                    <li><strong>Robust Feature Extraction:</strong> Leverages ResNet-34’s residual learning to capture
+                        intricate patterns, minimizing false positives.</li>
+                    <li><strong>Environment-Agnostic:</strong> Performs reliably under varying lighting, angles, and
+                        backgrounds, making it practical for field use.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="feature-item">
+                <h2> Offline Mode with Local Processing</h2>
+                <p>Designed for farmers and users in remote or low-connectivity areas, our offline mode enables plant
+                    disease detection without an internet connection. The ResNet-34 model is optimized to run locally on
+                    supported mobile devices, performing real-time image analysis and accessing a locally cached version
+                    of
+                    the remedy database. This feature ensures uninterrupted access to critical diagnostic tools, making
+                    the
+                    platform accessible in diverse agricultural settings.</p>
+                <ul>
+                    <li><strong>Local Model Execution:</strong> Runs a lightweight version of the ResNet-34 model
+                        on-device,
+                        reducing dependency on cloud servers.</li>
+                    <li><strong>Cached Remedy Database:</strong> Stores a subset of the Firebase database locally,
+                        providing
+                        instant access to remedies and disease information.</li>
+                    <li><strong>Sync Capabilities:</strong> Automatically syncs new data and updates when an internet
+                        connection is available, ensuring accuracy.</li>
+                    <li><strong>Low Resource Usage:</strong> Optimized for minimal battery and storage consumption,
+                        ideal
+                        for prolonged field use on mobile devices.</li>
+                    <li><strong>Multi-Language Support:</strong> Offers offline remedy descriptions in multiple
+                        languages to
+                        cater to diverse rural communities.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="feature-item">
+                <h2> Easy Image Upload</h2>
+                <p>Our intuitive image upload system allows users to submit leaf images directly from their devices,
+                    supporting farmers, gardeners, and researchers with a seamless experience. The platform accepts
+                    multiple
+                    image formats (JPEG, PNG) and employs advanced preprocessing techniques to standardize images for
+                    analysis, ensuring consistent results. The ResNet-34 model processes uploads in real-time,
+                    delivering a
+                    diagnosis with confidence scores within seconds.</p>
+                <ul>
+                    <li><strong>User-Friendly Interface:</strong> Features drag-and-drop functionality and clear
+                        prompts,
+                        accessible to users of all technical levels.</li>
+                    <li><strong>Image Preprocessing:</strong> Automatically adjusts brightness, contrast, and resolution
+                        to
+                        optimize images for accurate analysis.</li>
+                    <li><strong>Cross-Device Compatibility:</strong> Works flawlessly on desktops, iOS, and Android
+                        devices,
+                        ensuring accessibility anywhere.</li>
+                    <li><strong>Fast Processing:</strong> Delivers results in under 5 seconds, even for high-resolution
+                        images, thanks to optimized backend pipelines.</li>
+                    <li><strong>Secure Uploads:</strong> Implements encryption to protect user-uploaded images, ensuring
+                        data privacy and security.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="feature-item">
+                <h2> Remedy Retrieval System</h2>
+                <p>Upon detecting a disease, the system queries a Firebase Realtime Database to provide a detailed
+                    overview,
+                    symptoms, causes, and tailored remedies. Curated by agricultural experts, the database offers
+                    actionable
+                    insights, including organic and chemical treatments, preventive measures, and best practices. The
+                    system
+                    ensures users receive up-to-date, scientifically validated advice to address plant health issues
+                    effectively.</p>
+                <ul>
+                    <li><strong>Comprehensive Remedies:</strong> Provides step-by-step treatment plans, from
+                        eco-friendly
+                        solutions to professional-grade interventions.</li>
+                    <li><strong>Real-Time Data Access:</strong> Firebase’s low-latency architecture ensures instant
+                        retrieval of critical information.</li>
+                    <li><strong>Customized Advice:</strong> Tailors recommendations based on plant species, disease
+                        severity, and regional factors.</li>
+                    <li><strong>Expert-Curated Content:</strong> Regularly updated by agronomists to reflect the latest
+                        research and treatment advancements.</li>
+                    <li><strong>Preventive Guidance:</strong> Includes tips to prevent disease recurrence, such as soil
+                        management and crop rotation strategies.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="feature-item">
+                <h2> Fast API + Starlette Backend</h2>
+                <p>Built on FastAPI and Starlette, our platform’s backend is designed for speed, scalability, and
+                    reliability. FastAPI handles API requests with minimal latency, while Starlette’s asynchronous
+                    framework
+                    supports concurrent processing, ensuring a responsive experience even during high traffic. This
+                    modern
+                    Python-based architecture enables seamless integration of the deep learning model, database, and
+                    frontend, delivering real-time performance for users worldwide.</p>
+                <ul>
+                    <li><strong>Scalable Infrastructure:</strong> Supports thousands of concurrent users without
+                        compromising performance.</li>
+                    <li><strong>Async Processing:</strong> Reduces latency by handling image analysis and database
+                        queries
+                        simultaneously.</li>
+                    <li><strong>Secure APIs:</strong> Employs OAuth and HTTPS protocols to safeguard user data and
+                        interactions.</li>
+                    <li><strong>High Availability:</strong> Designed with redundancy to ensure 99.9% uptime, critical
+                        for
+                        time-sensitive agricultural use.</li>
+                    <li><strong>Developer-Friendly:</strong> FastAPI’s OpenAPI documentation allows easy integration for
+                        third-party developers or extensions.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #C0C0C0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #013220, #026440);
+            color: #ffffff;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar:hover {
+            background: linear-gradient(90deg, #026440, #038c5a);
+            transform: translateY(-5px);
+        }
+
+        #bar-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        #logo {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-container {
+            display: flex;
+            gap: 600px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-logo {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 32px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            color: #64CEAA;
+            transform: scale(1.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Muli-Regular";
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #64CEAA;
+            color: #013220;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+
+        .container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            justify-items: center;
+            margin-top: 80px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #2f855a;
+            margin-bottom: 1.5rem;
+            
+            font-size: 30px;
+        }
+        h2 {
+            color: #2f855a;
+        }
+
+        .feature-item {
+            margin-bottom: 30px;
+            align-items: center;
+            justify-items: center;
+
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: rgb(234, 234, 234);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .feature-item h2 {
+            color: #2980b9;
+        }
+
+        .feature-item p {
+            color: #34495e;
+            margin-top: 10px;
+        }
+
+        .feature-item ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: #34495e;
+        }
+
+        .feature-item ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+</body>
+
+</html>

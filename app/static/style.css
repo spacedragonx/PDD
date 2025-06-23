@@ -1,0 +1,587 @@
+/*@font-face {
+  font-family: "Muli-Regular";
+  src: url("../fonts/muli/Muli-Regular.ttf"); }
+@font-face {
+  font-family: "Muli-SemiBold";
+  src: url("../fonts/muli/Muli-SemiBold.ttf"); }*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h5{
+    font-family: "Muli-Regular";
+    color: #ffffff;
+    font-size: 25px;
+    top: 0;
+    
+    position: absolute;
+    text-align: center;
+}
+
+#cont2 {
+    position: fixed;
+    width: 37%;
+    height: 70%;
+    top: 20%;
+    left: 5%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#cont2 h5 {
+    font-family: "Muli-SemiBold", sans-serif;
+    color: #64CEAA;
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    position: static;
+    width: 100%;
+}
+
+.remedy-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+#overview, #remedy {
+    width: 90%;
+    min-height: 200px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 16px 18px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Muli-Regular", sans-serif;
+    box-shadow: 0 2px 8px rgba(100,206,170,0.07);
+    transition: box-shadow 0.2s;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#output-text {
+    margin-top: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Muli-Regular";
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5; 
+    text-align: justify; 
+    overflow-wrap: break-word; 
+}
+
+body {
+    background-color: #C0C0C0;
+    font-family: "Muli-Regular";
+    font-size: 12px;
+    margin: 0;
+}
+
+#result {
+    font-family: "Muli-Regular";
+    color: #1d1d1d;
+    left: 870px;
+    bottom: 100px;
+    font-size: 25px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 500px;
+}
+
+#sml{
+    font-family: "Muli-Regular";
+    color: #171717;
+    font-size: 25px;
+}
+#output{
+    font-family: "Muli-Regular";
+    color: #171717;
+    font-size: 25px;
+    left: 920px;
+    bottom: 70px;
+    margin: 0px;
+}
+button {
+    font-family: "Muli-Regular";
+}
+
+.heading {
+    letter-spacing: 1px;
+    color: #013220;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    position: fixed;
+    font-weight: 900;
+    left: 860px;
+    top: 90px;
+}
+
+
+.img {
+    border-radius: 24px;
+    width: 176px;
+    height: 176px;
+    left: 904px;
+    top: 280px;
+}
+
+.imgbox {
+    transition: box-shadow .3s;
+    border-radius: 24px;
+    border: 1px #696969;
+    width: 176px;
+    height: 176px;
+    left: 904px;
+    top: 280px;
+    text-align: center;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center align horizontally */
+    gap: 15px;
+}
+
+.imgbox:hover .img {
+    opacity: 0.3;
+}
+
+.imgbox:hover .middle {
+    opacity: 1;
+}
+
+.inner {
+    position: fixed;
+    width: 348px;
+}
+
+
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@media (max-width:400px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+form {
+    border-radius: 24px;
+    filter: drop-shadow(2px 2px 2px #000);
+    width: 264px;
+    height: 304px;
+    background-color: #C0C0C0;
+    position: fixed;
+    padding: 40px 40px 40px;
+    top: 240px;
+    left: 990px;
+    border: 1px #696969;
+}
+
+.imgboxtext {
+    top: 400px;
+    left: 840px;
+}
+
+.add {
+    background: #013220;
+    font-family: "Muli-Regular";
+    font-size: 12px;
+    text-align: center;
+    width: 72px;
+    height: 32px;
+    color: #fff;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.text {
+    font-family: "Muli-Regular";
+    color: #696969;
+    top: 160px;
+    left: 840px;
+    font-size: 16px;
+    position: fixed;
+}
+
+.middle input[id="imagefile"] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.middle input[id="cameraInput"] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+}
+
+#right {
+    border-radius: 0% 20% 20% 0%;
+    height: auto;
+    width: 760px;
+    left: 880px;
+    
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 1), 0 40px 40px rgba(0, 0, 0, 1);
+    filter: blur(2px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+      /* Makes image responsive */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    width: 100%;
+    height: 45px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #013220;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Muli-SemiBold";
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+button span {
+    position: relative;
+    z-index: 2;
+}
+
+button span {
+    position: relative;
+    z-index: 2;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 128, 0, 0.3);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+button:after {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+button:hover:before,
+button:hover:after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+
+.navbar {
+    background: linear-gradient(90deg, #013220, #026440);
+    color: #ffffff; 
+    padding: 15px 30px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.navbar:hover {
+    background: linear-gradient(90deg, #026440, #038c5a); 
+    transform: translateY(-5px); 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-logo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px; 
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+.nav-logo:hover {
+    color: #64CEAA; 
+    transform: scale(1.1); 
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Muli-Regular";
+    font-size: 18px; 
+    font-weight: 500; 
+    padding: 8px 15px;
+    border-radius: 10px; 
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #64CEAA; 
+    color: #013220; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+#bar-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow: auto;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .nav-logo {
+        font-size: 22px;
+        top: 0%;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 15px; 
+        text-align: center;
+        background: #013220; 
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links a {
+        font-size: 16px; 
+    }
+
+    .heading {
+        position: static;
+        
+        text-align: center;
+        font-size: 28px;
+        display: block;
+        
+        margin-top: 130px;
+    }
+
+    .text {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .inner {
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        margin: 20px auto;
+    }
+
+    form {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .imgbox,
+    .img {
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .imgbox {
+        margin: 0 auto;
+    }
+
+    .middle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #result {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #output {
+        font-size: 16px;
+        height: 60px;
+    }
+
+    #cont2 {
+        position: static;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        height: 400px;
+    }
+
+    #overview {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #right {
+        display: none;
+    }
+
+    .github-corner {
+        display: none;
+    }
+    body{
+        top:auto;
+    }
+}
